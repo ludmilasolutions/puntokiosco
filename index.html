@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Punto Kiosco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Quicksand', sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .modulo {
+      background: white;
+      margin: 2rem auto;
+      max-width: 900px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.6s ease forwards;
+    }
+    .modulo:nth-child(2) { animation-delay: 0.2s; }
+    .modulo:nth-child(3) { animation-delay: 0.4s; }
+    .modulo:nth-child(4) { animation-delay: 0.6s; }
+    .modulo:nth-child(5) { animation-delay: 0.8s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .modulo h2 {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      margin: 0;
+    }
+    .modulo p {
+      padding: 1rem 1.5rem;
+      line-height: 1.6;
+    }
+    .modulo p strong {
+      color: #000;
+    }
+    .modulo img {
+      width: 100%;
+      display: block;
+      border-top: 1px solid #ccc;
+    }
+
+    .contacto {
+      background-color: white;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .contacto h2 {
+      color: #003366;
+      margin-bottom: 1rem;
+    }
+    .contacto a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      background-color: #25D366;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .contacto a.email {
+      background-color: #003366;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Punto Kiosco</h1>
+    <p><strong>Software de gestión integral</strong> para kioscos, almacenes.</p>
+  </header>
+
+  <section class="modulo">
+    <h2>📦 Gestión de Stock</h2>
+    <p><strong>Cargá productos</strong> con todos sus datos: código, nombre, categoría, precio y stock. <strong>Importá y exportá</strong> desde Excel para tener siempre tu inventario al día.</p>
+    <img src="stock.png" alt="Gestión de Stock">
+  </section>
+
+  <section class="modulo">
+    <h2>🎁 Combos de Productos</h2>
+    <p><strong>Armá combos personalizados</strong> usando productos del stock, asignales un precio final y usalos en promociones, desayunos o packs especiales.</p>
+    <img src="combos.png" alt="Gestión de Combos">
+  </section>
+
+  <section class="modulo">
+    <h2>🧾 Facturación</h2>
+    <p>Realizá ventas con rapidez, seleccionando productos, método de pago y <strong>cálculo automático de vuelto</strong>. También podés <strong>gestionar fiados</strong> o consultar ventas del turno.</p>
+    <img src="facturar.png" alt="Pantalla de Facturación">
+  </section>
+
+  <section class="modulo">
+    <h2>📋 Gestión de Fiados</h2>
+    <p><strong>Registrá clientes y sus compras fiadas</strong>. Llevá un control de saldos, registrá pagos y consultá el historial de cada uno con total claridad.</p>
+    <img src="fiados.png" alt="Gestión de Fiados">
+  </section>
+
+  <section class="contacto">
+    <h2>📞 Contacto</h2>
+    <p>¿Querés más información o contratar el sistema?</p>
+    <a href="https://wa.me/543417558966" target="_blank">Contactar por WhatsApp</a>
+    <a href="mailto:puntokiosco.arg@gmail.com" class="email">Enviar Email</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Punto Kiosco – Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
